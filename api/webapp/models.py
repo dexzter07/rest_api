@@ -12,7 +12,7 @@ class employees(models.Model):
 class user_auth(models.Model):
     user_name = models.CharField(max_length=30)
     password = models.CharField(max_length=30)
-    token = models.CharField(max_length=20, blank = True)
+    token = models.CharField(max_length=20)
 
     def __str__(self):
             return self.user_name
